@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemakluman - MAQIS</title>
+    <title>Pemakluman - Laman Sesawang</title>
     
+    <!-- This links to Font Awesome for the social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
@@ -21,13 +22,17 @@
         }
 
         /* --- Header --- */
+        /* Updated header style to accommodate the new logo */
         header {
+            background-color: #1e2a5a; /* MAQIS dark blue from original branding */
+            padding: 20px 0; /* Add some vertical padding */
+            text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         header img {
-            width: 100%;       /* Makes the image responsive */
-            display: block;  /* Removes any bottom spacing */
+            max-height: 70px;  /* Set a max height for the logo */
+            width: auto;       /* Maintain aspect ratio */
         }
 
         /* --- Main Content --- */
@@ -53,10 +58,26 @@
             margin-bottom: 10px;
         }
 
+        /* Updated styles for the new multi-line message */
         .notification-message {
-            font-size: 1.25rem;
+            font-size: 1.15rem; /* Slightly smaller to fit more text */
             color: #333;
             margin-bottom: 30px;
+            text-align: left; /* Align text to the left */
+            line-height: 1.7; /* Increase line spacing */
+        }
+
+        .notification-message p {
+            margin: 15px 0; /* Add spacing between paragraphs */
+        }
+
+        .notification-message strong {
+            color: #333; /* Use a strong dark color */
+            text-align: center; /* Center the last line */
+            display: block; /* Make it a block element to center it */
+            margin-top: 25px; /* Add space above the final line */
+            font-size: 1.2rem; /* Make it slightly larger */
+            font-weight: 600;
         }
 
         /* --- Social Media Links --- */
@@ -69,7 +90,7 @@
         }
 
         .social-links a:hover {
-            color: #4CAF50; /* MAQIS green from the 'Utama' button */
+            color: #4CAF50; /* MAQIS green from the original 'Utama' button */
         }
 
         /* --- Footer --- */
@@ -85,27 +106,39 @@
 </head>
 <body>
 
+    <!-- 1. HEADER (Updated) -->
     <header>
-        <img src="maqis-header.png" alt="Header Portal Rasmi MAQIS">
+        <!-- Updated logo as requested -->
+        <img src="https://ik.imagekit.io/cbctech/logo-3.webp?updatedAt=1762312402227" alt="Laman Sesawang Logo"
+             onerror="this.alt='Logo cannot be loaded'">
     </header>
 
+    <!-- 2. MAIN CONTENT -->
     <main>
         <div class="container">
-            <h1 class="notification-title">Pemakluman</h1>
-            <p class="notification-message">
-                Laman sesawang sedang mengalami masalah teknikal. Harap maklum.
-            </p>
+            <h1 class="notification-title">NOTIS MAKLUMAN</h1>
             
+            <!-- Updated notification text based on the image -->
+            <div class="notification-message">
+                <p>Portal rasmi Jabatan Perkhidmatan Kuarantin dan Pemeriksaan Malaysia (MAQIS) tidak dapat diakses buat sementara waktu kerana kerja-kerja penyelenggaraan dan pengemaskinian sedang dijalankan.</p>
+                <p>Sebarang pertanyaan boleh dikemukakan kepada <a href="mailto:feedback@maqis.gov.my">feedback@maqis.gov.my</a> atau 03-8870 8000.</p>
+                <p><strong>egala kesulitan amatlah dikesali.</strong></p>
+            </div>
+            
+            <!-- 3. SOCIAL MEDIA ICONS -->
             <div class="social-links">
-                <a href="#" aria-label="Facebook MAQIS"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" aria-label="Instagram MAQIS"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="X MAQIS"><i class="fa-brands fa-x-twitter"></i></a>
+                <!-- Add your actual social media links to the href="#" -->
+                <a href="https://facebook.com/maqismalaysia/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/maqismalaysia" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/MaqisMalaysia" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
     </main>
 
+    <!-- 4. FOOTER -->
     <footer class="site-footer">
-        <p>&copy; 2025 Hak Cipta Terpelihara. Jabatan Perkhidmatan Kuarantin dan Pemeriksaan Malaysia.</p>
+        <!-- You may want to update this copyright text -->
+        <p>&copy; 2025 Hak Cipta Terpelihara.</p>
     </footer>
 
 </body>
